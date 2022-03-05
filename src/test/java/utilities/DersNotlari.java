@@ -1,4 +1,4 @@
-package utuluties;
+package utilities;
 
 public class DersNotlari {
     /*
