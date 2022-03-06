@@ -2,7 +2,7 @@ package utilities;
 
 public class DersNotlari {
     /*
-    1) API testlerinde Web Driver kullanıyor musunuz? Hangi dependencies'leri kullanıyorsunuz?
+   1) API testlerinde Web Driver kullanıyor musunuz? Hangi dependencies'leri kullanıyorsunuz?
    API testlerinde, UI testleri için gerekli Web Driver dependencies'lere ihtiyaç yoktur.
    Başlangıç için Rest-Assured veye JUnit ve TEstNG gibi dependencies'ler yeterli olur.
 
@@ -13,7 +13,6 @@ public class DersNotlari {
 
 3) API testlerinde request nasıl tanımlanır?
    given().when().get() içerisinde tanımlanır.
-   Response response=given().when().get()
 
 4) Request'ten gelen cevap (response) nerede saklanır?
    Response response'un içerisinde.
@@ -23,17 +22,40 @@ public class DersNotlari {
 
 6) API Testlerinde response doğrulma nasıl yapılır?
    a) TestNG ve JUnit Assert'leri kullanılarak
-   b) assertThat()
-   c) Json Path
-   d) Matchers Class
+   b) Json Path -> JsonPath() json = response.JsonPath();
+   c) Matchers Class
+   d) De-Serialization
    e)
    f)
    g)
    h)
 
+7) Matchers.equalto(): Key-Value şeklinde girilen datanın, eşit olduğunu doğrulamak için kullanılır.
+
+8) Matchers.hasSize(): Datanın size'ını doğrulamak için kullanılır.
+
+9) Matchers.hasItem(): Girilen tek bir data'yı doğrulamak için kullanılır.
+
+10) Matchers.hasItems(): Girilen birden fazla datayı doğrulamak için kullanılır.
+
+11) Matcher Class: http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/Matchers.html
+
+
+
+TEST iÇiN KULLANILAN ADRESLER
 
 https://restful-booker.herokuapp.com/booking
 
 https://reqres.in/api/users
+
+http://dummy.restapiexample.com/api/v1/employee
+
+https://jsonplaceholder.typicode.com/
+
+https://www.gmibank.com/api/authenticate
+
+http://www.gmibank.com/api/tp-customers
+
+
      */
 }
