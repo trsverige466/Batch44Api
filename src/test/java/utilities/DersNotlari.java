@@ -24,7 +24,8 @@ public class DersNotlari {
    a) TestNG ve JUnit Assert'leri kullanılarak
    b) Json Path -> JsonPath() json = response.JsonPath();
    c) Matchers Class
-   d) De-Serialization
+    d) De-Serialization
+        HashMap<String, Object> actualData = response.as(HashMap.class);
    e)
    f)
    g)
