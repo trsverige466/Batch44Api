@@ -26,7 +26,7 @@ public class DersNotlari {
    c) Matchers Class
     d) De-Serialization
         HashMap<String, Object> actualData = response.as(HashMap.class);
-   e)
+   e) JSON object
    f)
    g)
    h)
