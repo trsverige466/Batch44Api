@@ -1,7 +1,6 @@
 package get_http_request.day11;
 
 import base_url.DummyBaseUrl;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
