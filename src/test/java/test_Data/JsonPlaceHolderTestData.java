@@ -28,7 +28,9 @@ public class JsonPlaceHolderTestData {
      */
 
     public JSONObject setUpPostData(){
+
         JSONObject expectedRequest = new JSONObject();
+
         expectedRequest.put("userId", 55);
         expectedRequest.put("title", "Tidy your room");
         expectedRequest.put("completed", false);
@@ -48,7 +50,9 @@ public class JsonPlaceHolderTestData {
 
     //PutRequest01
     public JSONObject setUpPutData(){
+
         JSONObject expectedRequest = new JSONObject();
+
         expectedRequest.put("userId", 21);
         expectedRequest.put("title", "Wash the dishes");
         expectedRequest.put("completed", false);
@@ -63,7 +67,9 @@ https://jsonplaceholder.typicode.com/todos/198 URL ine aşağıdaki body gönder
  */
     //PatchRequest01
     public JSONObject setUpPatchRequestData(){
+
         JSONObject requestData = new JSONObject();
+
         requestData.put("title", "Batch44");
         return requestData;
     }
@@ -79,7 +85,9 @@ https://jsonplaceholder.typicode.com/todos/198 URL ine aşağıdaki body gönder
 
     //PatchRequest01
     public JSONObject setUpPatchExpectedData(){
+
         JSONObject expectedData = new JSONObject();
+
         expectedData.put("userId", 10);
         expectedData.put("title", "Batch44");
         expectedData.put("completed", true);

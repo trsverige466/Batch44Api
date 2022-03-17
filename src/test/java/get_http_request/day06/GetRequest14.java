@@ -43,7 +43,7 @@ public class GetRequest14 extends GMIBankBaseUrl {
                         , "lastName", equalTo("Bernhard")
                         , "email", equalTo("chas.kuhlman@yahoo.com")
                         , "zipCode", equalTo("40207")
-                        , "country.name", equalTo("San Jose")
+                        , "country.name", equalTo("SansssjjjJose")
                         , "user.login", equalTo("delilah.metz"));
 
 
@@ -53,7 +53,7 @@ public class GetRequest14 extends GMIBankBaseUrl {
         Assert.assertEquals("Bernhard", json.getString("lastName"));
         Assert.assertEquals("chas.kuhlman@yahoo.com", json.getString("email"));
         Assert.assertEquals("40207", json.getString("zipCode"));
-        Assert.assertEquals("San Jose", json.getString("country.name"));
+        Assert.assertEquals("SansssjjjJose", json.getString("country.name"));
         Assert.assertEquals("delilah.metz", json.getString("user.login"));
 
     }

@@ -45,7 +45,7 @@ public class GetRequest08 extends DummyBaseUrl {
         System.out.println(json.getString("data.employee_name[0,1,2,3,4]"));
 
         //4) En son calisanin adini konsola yazdiralim
-        json.getString("data.employee_name[-1]");
+        System.out.println(json.getString("data.employee_name[-1]"));
 
     }
 }

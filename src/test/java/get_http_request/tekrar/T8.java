@@ -17,7 +17,7 @@ public class T8 extends DummyBaseUrl {
   4) En son calisanin adini konsola yazdiralim
 */
     @Test
-    public void GetRequest08(){
+    public void GetRequest008(){
         spec02.pathParams("first","api","second","v1","third","employees");
 
         Response response = given().spec(spec02).when().get("/{first}/{second}/{third}");

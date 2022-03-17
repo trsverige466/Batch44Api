@@ -12,7 +12,8 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetRequest18 extends GMIBankBaseUrl {
+public class
+GetRequest18 extends GMIBankBaseUrl {
 
     /*
            http://www.gmibank.com/api/tp-customers/43703
