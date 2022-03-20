@@ -41,6 +41,7 @@ public class PostRequestPojo01 extends JsonPlaceHolderBaseUrl {
                 .body(expectedData)
                 .when()
                 .post("/{first}");
+
         response.prettyPrint();
 
         //4) DOGRULAMA
