@@ -2,7 +2,48 @@ package utilities;
 
 public class DersNotlari {
     /*
-   1) API testlerinde Web Driver kullanıyor musunuz? Hangi dependencies'leri kullanıyorsunuz?
+   API DERSİNDE NELER ÖĞRENDİNİZ?
+
+    * POSTMAN
+
+    * Rest Assured: REST API'lerini test etmek ve doğrulamak için kullanılan
+                    Open Source (Açık Kaynak) bir Java kütüphanesidir.
+
+    * JUnit Assert'leri kullanılarak doğrulama
+
+    * Json Path kullanarak doğrulama
+        JsonPath() json = response.JsonPath();
+
+    * Matchers Class kullanarak doğrulama
+        http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/Matchers.html
+
+        Matchers.equalto(): Key-Value şeklinde girilen datanın, eşit olduğunu doğrulamak için kullanılır.
+        Matchers.hasSize(): Datanın size'ını doğrulamak için kullanılır.
+        Matchers.hasItem(): Girilen tek bir data'yı doğrulamak için kullanılır.
+        Matchers.hasItems(): Girilen birden fazla datayı doğrulamak için kullanılır.
+
+    * De-Serialization: JSON formatını Javaya dönüştürme
+        HashMap<String, Object> actualData = response.as(HashMap.class);
+
+    * Serialization: Java yapısında olan dataları JSON'a dönüştürme
+        Gson gson = new Gson();
+        String jsonFromJava = gson.toJson(actual);
+
+    * JSON Object
+        JsonPlaceHolderTestData testObje = new JsonPlaceHolderTestData();
+        JSONObject expectedRequest = testObje.setUpPostData();
+
+    * Pojo Class (Plain Old Java Object)
+
+    * ObjectMapper: JSON ve POJO (Plain Old Java Objects) okuma ve yazma işlevlerinin yanı sıra
+        dönüştürmeleri gerçekleştirmek için de kullanılır.
+
+    * API den alınan response'ları bilgisayara text dosyası olarak kaydetme ve doğrulama yapma.
+
+    * Reusable method oluşturma.
+
+
+1) API testlerinde Web Driver kullanıyor musunuz? Hangi dependencies'leri kullanıyorsunuz?
    API testlerinde, UI testleri için gerekli Web Driver dependencies'lere ihtiyaç yoktur.
    Başlangıç için Rest-Assured veye JUnit ve TEstNG gibi dependencies'ler yeterli olur.
 
@@ -20,28 +61,6 @@ public class DersNotlari {
 5) assertThat() Hard mı yoksa Soft Assert müdür?
    assertThat() Hard assertion'dır.
 
-6) API Testlerinde response doğrulma nasıl yapılır?
-   a) TestNG ve JUnit Assert'leri kullanılarak
-   b) Json Path -> JsonPath() json = response.JsonPath();
-   c) Matchers Class
-    d) De-Serialization
-        HashMap<String, Object> actualData = response.as(HashMap.class);
-   e) JSON object
-   f)
-   g)
-   h)
-
-7) Matchers.equalto(): Key-Value şeklinde girilen datanın, eşit olduğunu doğrulamak için kullanılır.
-
-8) Matchers.hasSize(): Datanın size'ını doğrulamak için kullanılır.
-
-9) Matchers.hasItem(): Girilen tek bir data'yı doğrulamak için kullanılır.
-
-10) Matchers.hasItems(): Girilen birden fazla datayı doğrulamak için kullanılır.
-
-11) Matcher Class: http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/Matchers.html
-
-
 
 TEST iÇiN KULLANILAN ADRESLER
 
@@ -56,7 +75,5 @@ https://jsonplaceholder.typicode.com/
 https://www.gmibank.com/api/authenticate
 
 http://www.gmibank.com/api/tp-customers
-
-
      */
 }
